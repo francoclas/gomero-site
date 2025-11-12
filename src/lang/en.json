@@ -1,0 +1,12 @@
+{
+    "nav": {
+       "title" : "GomeroDev",
+       "links" :{
+        "home" : "Home",
+        "projects": "Portfolio",
+        "lab" : "Lab",
+        "personal":"About me"
+       }
+    }
+
+}
