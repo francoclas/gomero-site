@@ -4,7 +4,7 @@ import "./globals.css";
 //NextInt idiomas
 import { NextIntlClientProvider } from 'next-intl';
 //Paginas
-
+import AboutMe from "../app/aboutme";
 //Componentes
 import Nav from "../components/Nav"
 
