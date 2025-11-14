@@ -1,0 +1,49 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- MARQUEE --- */
+.marquee-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.12;
+}
+
+.marquee-row {
+  white-space: nowrap;
+  font-size: 7rem;
+  font-weight: 800;
+  color: white;
+  animation: marquee 25s linear infinite;
+  margin: -1.2rem 0;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* --- HERO TEXT --- */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .marquee-row { font-size: 3rem; }
+  .hero-content h1 { font-size: 2rem; }
+}
