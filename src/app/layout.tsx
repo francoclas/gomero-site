@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 //NextInt idiomas
 import { NextIntlClientProvider } from 'next-intl';
+import { cookies } from "next/headers";
 //Paginas
-import AboutMe from "../app/aboutme";
 //Componentes
 import Nav from "../components/Nav"
 
@@ -17,19 +17,22 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+//Lang
 
 export const metadata: Metadata = {
   title: "Gomero.Dev",
   description: "Pagina de GomeroDev, desarrollos profesional y personales.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = await cookies();
+  const preferredLang = cookieStore.get("preferredLang")?.value || "es";
   return (
-    <html lang="en">
+    <html lang="preferredLang">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

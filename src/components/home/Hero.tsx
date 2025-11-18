@@ -2,7 +2,7 @@ import BackgroundMarquee from "@/components/home/BackgroundMarquee";
 import "@styles/home/background-marquee.css";
 export default function Hero() {
   const rows = 6;
-  const text = "gomero.dev • gomero.dev • gomero.dev • ";
+  const text = "texto ejemplo ";
 
   return (
     <section className="hero-section">
@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       <div className="hero-content">
-        <h1>FRASE PRESENTACIÓN O ESLOGAN</h1>
+        <h1>FRASE PRESENTACIÓN </h1>
       </div>
     </section>
   );

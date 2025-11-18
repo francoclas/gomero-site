@@ -1,0 +1,54 @@
+/* --- SECCIÓN GENERAL --- */
+.acerca-section {
+  padding: 6rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.acerca-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* --- TARJETAS --- */
+.acerca-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.12);
+  
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  color: white;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: 0.25s ease;
+}
+
+.acerca-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* --- TEXTO --- */
+.acerca-card h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.acerca-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .acerca-container {
+    grid-template-columns: 1fr;
+  }
+}

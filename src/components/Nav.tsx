@@ -1,15 +1,25 @@
 //Importo use translation
 'use client'
 import { useState, useRef,useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+//Traigo nextlocale
+import { setLocale } from '@/app/actions/languageAction';
 import '@styles/nav.css';
 import { useTranslations } from 'next-intl';
 
+
 export default function Nav() {
     const t = useTranslations("nav");
+    const router = useRouter();
     //Setear menu de configuracion
     const [open, setOpen] = useState(false);
     const menuRef = useRef(null)
-
+    //LAng
+    const changeLang = async (lang:string) => {
+        await setLocale(lang);
+        router.refresh();
+    }
+   
     //Cerrar menu al cargar
     useEffect(() => {
         function handleClickOutside(event){
@@ -31,8 +41,8 @@ export default function Nav() {
       <li ref={menuRef} className="config-btn" onClick={() => setOpen(!open)}>
         ⚙️
         <ul className={`dropdown ${open ? "show" : ""}`}>
-          <li>🇺🇾 Español</li>
-          <li>🇺🇸 English</li>
+          <li className='setLang' onClick={() => changeLang("es")}>🇺🇾 Español</li>
+          <li className='setLang' onClick={() => changeLang("en")}>🇺🇸 English</li>
           <li>🌗 Tema</li>
         </ul>
       </li>
