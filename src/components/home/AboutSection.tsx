@@ -1,29 +1,31 @@
-import "@styles/home/about-Section.css";
 import CarouselStack from "./CarouselStack";
+import { CometCard } from "@/components/ui/comet-card";
+import { useTranslations } from "next-intl";
 
 export default function AboutSection() {
+ const t = useTranslations("aboutHome");
+
   return (
     <section className="acerca-section">
       <div className="acerca-container">
-        
-        <div className="acerca-card">
-          <h2>Presentación 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus saepe, sunt ipsam, accusantium iusto soluta vero doloremque porro architecto obcaecati consequatur? Illum incidunt eaque deserunt doloribus in, labore molestiae magnam..
-          </p>
-        </div>
 
-        <div className="acerca-card">
-          <h2>Presentacion 2</h2>
-          <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, sed autem. Sunt voluptatum cupiditate ducimus nesciunt. Maiores consequuntur amet similique quidem tempore, in possimus neque, rem inventore tenetur a sapiente?
-          </p>
-        </div>
-      </div>
-      <div>
-        <CarouselStack></CarouselStack>
+        <CometCard>
+          <div className="acerca-card">
+            <h2>{t("aboutProTitle")}</h2>
+            <p>{t("aboutProText")}</p>
+          </div>
+        </CometCard>
+
+        <CometCard>
+          <div className="acerca-card">
+            <h2>{t("aboutPersonalTitle")}</h2>
+            <p>{t("aboutPersonalText")}</p>
+          </div>
+        </CometCard>
+
       </div>
     </section>
-    
   );
 }
+
+        <CarouselStack></CarouselStack>

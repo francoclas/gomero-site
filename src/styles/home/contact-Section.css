@@ -1,0 +1,136 @@
+/* ======== CONTENEDOR GENERAL ======== */
+
+.contact-section {
+  width: 100%;
+  padding: 3rem 1.5rem;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======== GLASSMORPHISM ======== */
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;             
+  padding: 1.5rem;                  
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== PANEL IZQUIERDO ======== */
+
+.social-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;              /* centra todo */
+  justify-content: center;
+}
+
+.social-title {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: white;
+  text-align: center;
+}
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
+  gap: 1.5rem;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.25s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.08);
+  border-color: rgba(255, 0, 0, 0.45);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+  color: #ff4444;
+}
+
+/* ======== FORMULARIO ======== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: white;
+}
+
+input,
+textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(255, 0, 0, 0.45);
+}
+
+/* ======== BOTÓN ======== */
+
+.submit-btn {
+  background: #ff3333;
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.submit-btn:hover {
+  background: #ff4444;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(255, 50, 50, 0.45);
+}
