@@ -20,7 +20,11 @@
         "aboutProTitle": "Construyendo experiencias digitales",
         "aboutProText": "Desarrollo aplicaciones web enfocadas en rendimiento, accesibilidad y diseño moderno. Aposto por buenas prácticas, arquitectura mantenible y una visión profesional orientada al detalle. Mi objetivo es crear software que aporte valor real, tanto a empresas como a usuarios.",
         "aboutPersonalTitle": "Una mezcla de creatividad y curiosidad",
-        "aboutPersonalText": "Además del desarrollo, disfruto explorar arte, entrenar, viajar y aprender cosas nuevas. Me gusta experimentar, crear proyectos propios y desafiarme constantemente. Creo que la creatividad fuera del código alimenta la creatividad dentro de él."
+        "aboutPersonalText": "Además del desarrollo, disfruto explorar arte, entrenar, viajar y aprender cosas nuevas. Me gusta experimentar, crear proyectos propios y desafiarme constantemente. Creo que la creatividad fuera del código alimenta la creatividad dentro de él.",
+        "aboutLinkWork":"Ver mis trabajos",
+        "aboutLinkLab" :"Ver mi Laboratorio",
+        "aboutLinkMe" :"Sobre mi"
+        
     }
 
 

@@ -9,7 +9,7 @@ export default function ContactSection() {
 
   return (
     <section className="contact-section" id="contacto">
-      <h2 className="contact-title">{t("title")}</h2>
+      <h2 className="contact-title">{t("title")} 😊</h2>
 
       <div className="contact-container">
 

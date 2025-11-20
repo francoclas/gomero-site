@@ -1,8 +1,8 @@
 import BackgroundMarquee from "@/components/home/BackgroundMarquee";
 import "@styles/home/background-marquee.css";
 export default function Hero() {
-  const rows = 6;
-  const text = "texto ejemplo ";
+  const rows = 12;
+  const text = " gomero.dev ";
 
   return (
     <section className="hero-section">
@@ -12,7 +12,7 @@ export default function Hero() {
             key={i}
             className="marquee-row"
             style={{
-              animationDuration: `${20 + i * 3}s`,
+              animationDuration: `${30 + i * 3}s`,
               animationDirection: i % 2 === 0 ? "normal" : "reverse",
             }}
           >

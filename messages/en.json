@@ -20,7 +20,9 @@
         "aboutProTitle": "Building digital experiences",
         "aboutProText": "I develop web applications focused on performance, accessibility, and modern design. I’m committed to best practices, maintainable architectures, and a detail-oriented mindset. My goal is to create software that delivers real value to both businesses and users.",
         "aboutPersonalTitle": "A mix of creativity and curiosity",
-        "aboutPersonalText": "Besides development, I enjoy exploring art, training, traveling, and learning new things. I love experimenting, building personal projects, and challenging myself. I believe that creativity outside of code fuels creativity within it."
+        "aboutPersonalText": "Besides development, I enjoy exploring art, training, traveling, and learning new things. I love experimenting, building personal projects, and challenging myself. I believe that creativity outside of code fuels creativity within it.",
+        "aboutLinkWork":"See my Portfolio",
+        "aboutLinkLab" :"See my personal projects"
     }
   
     
