@@ -1,5 +1,6 @@
 import { CometCard } from "@/components/ui/comet-card";
 import { useTranslations } from "next-intl";
+import GButton from "../ui/gbutton";
 
 export default function AboutSection() {
   const t = useTranslations("aboutHome");
@@ -16,7 +17,7 @@ export default function AboutSection() {
             backdrop-blur-xl 
             border border-white/10 
             p-8 
-            text-white 
+            text-inherit 
             shadow-lg 
             transition-all 
             duration-300
@@ -28,12 +29,8 @@ export default function AboutSection() {
               {t("aboutProText")}
             </p>
             <div className="justify-between">
-              <a href="/portfolio" className="mt-6 inline-block text-sm text-red-400 hover:text-red-500 transition">
-                → {t("aboutLinkWork")}
-              </a>
-              <a href="/laboratorio" className="mt-6 inline-block text-sm text-red-400 hover:text-red-500 transition">
-                → {t("aboutLinkLab")}
-              </a>
+              <GButton href="/portafolio">{t("aboutLinkLab")}</GButton> 
+              <GButton href="/laboratorio">{t("aboutLinkWork")}</GButton>
              </div> 
           </div>
         </CometCard>
@@ -46,11 +43,10 @@ export default function AboutSection() {
             backdrop-blur-xl 
             border border-white/10 
             p-8 
-            text-white 
+            text-inherit 
             shadow-lg 
             transition-all 
             duration-300
-            
           ">
             <h2 className="text-2xl font-semibold mb-4 ">
               {t("aboutPersonalTitle")}
@@ -58,9 +54,7 @@ export default function AboutSection() {
             <p className="text-base opacity-90 leading-relaxed ">
               {t("aboutPersonalText")}
             </p>
-            <a href="/laboratorio" className="mt-6 inline-block text-sm text-red-400 hover:text-red-500 transition">
-                → {t("aboutLinkMe")}
-              </a>
+              <GButton href="/portafolio">{t("aboutLinkMe")}</GButton>
           </div>
            
         </CometCard>
