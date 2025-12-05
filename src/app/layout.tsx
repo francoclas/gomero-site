@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+//Temas
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 //NextInt idiomas
 import { NextIntlClientProvider } from 'next-intl';
@@ -36,10 +38,12 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <NextIntlClientProvider>
         <Nav></Nav>
         {children}
         </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

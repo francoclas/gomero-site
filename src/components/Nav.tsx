@@ -6,6 +6,8 @@ import { useRouter } from 'next/navigation';
 import { setLocale } from '@/app/actions/languageAction';
 import '@styles/nav.css';
 import { useTranslations } from 'next-intl';
+import ThemeToggle from './ui/toggle-theme';
+import SettingsMenu from './ui/settings-menu';
 
 
 export default function Nav() {
@@ -38,13 +40,11 @@ export default function Nav() {
                 <li><a href="#">{t('links.projects')}</a></li>
                 <li><a href="#">{t('links.lab')}</a></li>
                 <li><a href="#">{t('links.personal')}</a></li>
-      <li ref={menuRef} className="config-btn" onClick={() => setOpen(!open)}>
-        ⚙️
-        <ul className={`dropdown ${open ? "show" : ""}`}>
-          <li className='setLang' onClick={() => changeLang("es")}>🇺🇾 Español</li>
-          <li className='setLang' onClick={() => changeLang("en")}>🇺🇸 English</li>
-          <li>🌗 Tema</li>
-        </ul>
+      <li>
+        <SettingsMenu/>
+      </li>
+      <li>
+        <ThemeToggle/>
       </li>
             </ul>
         </nav>

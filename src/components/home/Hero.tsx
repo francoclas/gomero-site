@@ -1,8 +1,12 @@
 import BackgroundMarquee from "@/components/home/BackgroundMarquee";
 import "@styles/home/background-marquee.css";
-export default function Hero() {
+import { obtenerFrase } from "services/frases.js";
+import { getLocale } from "next-intl/server";
+export default async function Hero() {
   const rows = 12;
   const text = " gomero.dev ";
+  const locale = await getLocale();
+  const { frase, autor } = await obtenerFrase(locale);
 
   return (
     <section className="hero-section">
@@ -22,7 +26,8 @@ export default function Hero() {
       </div>
 
       <div className="hero-content">
-        <h1>FRASE PRESENTACIÓN </h1>
+       <h1>{frase}</h1>
+      <h2>- {autor}</h2>
       </div>
     </section>
   );
