@@ -33,20 +33,24 @@ export default function Nav() {
         return () => document.removeEventListener("mousedown",handleClickOutside)
     },[]);
     return (
-        <nav className="nav-container">
-            <h1 className="nav-logo">gomero<span className="dot-red">.dev</span></h1>
+      <nav className="nav-container">
+            <h1 className="nav-logo">
+                gomero<span className="dot-red">.dev</span>
+            </h1>
+
             <ul className="nav-links">
                 <li><a href="#">{t('links.home')}</a></li>
                 <li><a href="#">{t('links.projects')}</a></li>
                 <li><a href="#">{t('links.lab')}</a></li>
                 <li><a href="#">{t('links.personal')}</a></li>
-      <li>
-        <SettingsMenu/>
-      </li>
-      <li>
-        <ThemeToggle/>
-      </li>
             </ul>
+
+            <div className="config-btn">
+                <SettingsMenu />
+            </div>
+            <div className="theme-btn">
+                <ThemeToggle />
+            </div>
         </nav>
     );
 }

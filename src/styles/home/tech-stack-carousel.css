@@ -1,0 +1,69 @@
+/* --- CONTENEDOR PRINCIPAL --- */
+.tech-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- GRADIENTES LATERALES --- */
+.fade-left,
+.fade-right {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+:root {
+  --bg-main: #ffffff;
+}
+
+.dark {
+  --bg-main: #000000;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-main) 0%, transparent 100%);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-main) 0%, transparent 100%);
+}
+
+/* --- CARRUSEL INFINITO --- */
+.tech-carousel {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: scroll 40s linear infinite; /* velocidad */
+}
+
+/* Loop perfecto */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* la mitad del array duplicado */
+  }
+}
+
+/* --- ICONOS --- */
+.tech-item {
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 //Secciones
 import Hero from "@/components/home/Hero"
+import TechStackCarousel from "@/components/home/StackCarousel";
 import AboutSection from "@/components/home/AboutSection";
 import ContactSection from "@components/home/ContactSection";
 export default function Home() {
@@ -9,6 +10,9 @@ export default function Home() {
       <main className="">
         <section className="hero-inicio">
           <Hero></Hero>
+        </section>
+        <section className="StackCarousel">
+          <TechStackCarousel></TechStackCarousel>
         </section>
         <section className="AboutSite">
           <AboutSection></AboutSection>

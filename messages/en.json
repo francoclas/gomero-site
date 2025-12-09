@@ -24,6 +24,10 @@
         "aboutLinkWork":"See my Portfolio",
         "aboutLinkLab" :"See my personal projects",
         "aboutLinkMe" :"About me"
+    },
+    "footer":{
+        "footerDesc" :"Building digital experiences with passion and curiosity.",
+        "footerRec" : "All rights reserved."
     }
   
     

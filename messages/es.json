@@ -25,6 +25,9 @@
         "aboutLinkLab" :"Ver mi Laboratorio",
         "aboutLinkMe" :"Sobre mi"
         
+    },
+    "footer":{
+        "footerDesc" :"Creando experiencias digitales con pasión y curiosidad.",
+        "footerRec" : "Todos los derechos reservados."
     }
-    
 }

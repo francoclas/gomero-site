@@ -9,6 +9,7 @@ import { cookies } from "next/headers";
 //Paginas
 //Componentes
 import Nav from "../components/Nav"
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
         <Nav></Nav>
         {children}
+        <Footer></Footer>
         </NextIntlClientProvider>
         </ThemeProvider>
       </body>
