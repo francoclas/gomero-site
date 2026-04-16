@@ -4,30 +4,63 @@
        "links" :{
         "home" : "Inicio",
         "projects": "Portafolio",
-        "lab" : "Laboratorio",
         "personal":"Sobre mi"
        }
     },
     "contact": {
     "title": "Trabajemos juntos",
-    "socialTitle": "Mis redes",
-    "name": "Nombre",
-    "email": "Correo electrónico",
-    "message": "Mensaje",
-    "send": "Enviar"
+    "socialTitle": "Encontrame en",
+    "ctaText": "Podés comunicarte conmigo a través de correo o redes sociales. ¡Con gusto charlamos!",
+    "emailBtn": "Enviar correo",
+    "instagramBtn": "Instagram"
     },
     "aboutHome":{
         "aboutProTitle": "Construyendo experiencias digitales",
         "aboutProText": "Desarrollo aplicaciones web enfocadas en rendimiento, accesibilidad y diseño moderno. Aposto por buenas prácticas, arquitectura mantenible y una visión profesional orientada al detalle. Mi objetivo es crear software que aporte valor real, tanto a empresas como a usuarios.",
         "aboutPersonalTitle": "Una mezcla de creatividad y curiosidad",
         "aboutPersonalText": "Además del desarrollo, disfruto explorar arte, entrenar, viajar y aprender cosas nuevas. Me gusta experimentar, crear proyectos propios y desafiarme constantemente. Creo que la creatividad fuera del código alimenta la creatividad dentro de él.",
-        "aboutLinkWork":"Ver mis trabajos",
-        "aboutLinkLab" :"Ver mi Laboratorio",
+        "aboutLinkWork":"Ver mi Portafolio",
         "aboutLinkMe" :"Sobre mi"
-        
     },
     "footer":{
         "footerDesc" :"Creando experiencias digitales con pasión y curiosidad.",
         "footerRec" : "Todos los derechos reservados."
+    },
+    "portfolio":{
+        "title": "Portafolio",
+        "subtitle": "Una colección de mis proyectos y trabajos profesionales.",
+        "comingSoon": "Próximamente",
+        "comingSoonDesc": "Estoy trabajando en algo genial. ¡Volvé pronto!"
+    },
+    "aboutme":{
+        "title": "Sobre mi",
+        "subtitle": "Quién soy, qué hago y qué me mueve.",
+        "introP1": "No soy de los que se quedan solo en la teoría. Me gusta entender cómo funcionan las cosas, meter mano y mejorar sobre la marcha.",
+        "introP2": "Paso gran parte de mi tiempo construyendo proyectos, aprendiendo nuevas herramientas y buscando formas de hacer las cosas más simples y eficientes.",
+        "introP3": "No soy de sobrepensar demasiado: prefiero hacer, equivocarme y mejorar.",
+        "gamingTitle": "Jueguitos",
+        "gamingText": "Me interesan los juegos donde el progreso depende de la práctica, la constancia y aprender de los errores. Disfruto los entornos donde mejorar es parte del proceso.",
+        "steamBtn": "Ver perfil en Steam",
+        "gymTitle": "Gym",
+        "gymP1": "El entrenamiento es una parte clave de mi rutina. Me enseñó disciplina, constancia y a empujar incluso cuando no tengo ganas.",
+        "gymP2": "Esa mentalidad la aplico directamente en mi forma de trabajar y encarar problemas.",
+        "statusLabel": "Modo actual",
+        "statusModeRow": "Modo",
+        "statusModeVal": "Construyendo",
+        "statusStateRow": "Estado",
+        "statusStateVal": "Activo",
+        "statusFocusRow": "Foco",
+        "statusFocusVal": "Mejorar y aprender",
+        "statusLevelRow": "Nivel",
+        "statusLevelVal": "En progreso",
+        "gymTag1": "Disciplina",
+        "gymTag2": "Constancia",
+        "gymTag3": "Mejora continua",
+        "gymTag4": "Enfoque",
+        "gymTag5": "Sin excusas",
+        "musicTitle": "Música",
+        "musicP1": "La música es parte de mi día a día. Me acompaña cuando entreno, cuando estoy concentrado trabajando o cuando quiero desconectar.",
+        "musicP2": "Me interesa cómo influye en mi energía, enfoque y estado mental.",
+        "musicListen": "Escuchar"
     }
 }

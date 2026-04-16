@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Tool",
+    "desc": {
+      "es": "Ideal para concentrarme y abstraerme de la realidad.",
+      "en": "Perfect for focusing and losing myself in the process."
+    },
+    "image": "/artists/tool.png",
+    "url": "https://open.spotify.com/artist/2yEwvVSSSUkcLeSTNyHKh8"
+  },
+  {
+    "name": "System of a Down",
+    "desc": {
+      "es": "Caos controlado con mensaje, energía pura cuando necesito subir revoluciones.",
+      "en": "Controlled chaos with a message — pure energy when I need to turn it up."
+    },
+    "image": "/artists/soad.png",
+    "url": "https://open.spotify.com/artist/5eAWCfyUhZtHHtBdNk56l1"
+  },
+  {
+    "name": "Kanye West",
+    "desc": {
+      "es": "Simplemente el GOAT",
+      "en": "Simply the GOAT."
+    },
+    "image": "/artists/kanye-west.png",
+    "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+  },
+  {
+    "name": "Kamada",
+    "desc": {
+      "es": "Los mejores rappers de habla hispana",
+      "en": "The best Spanish-speaking rappers."
+    },
+    "image": "/artists/kamada.png",
+    "url": "https://open.spotify.com/intl-es/artist/5p3CzYVyNJ3qvuS6aXxo9R"
+  },
+  {
+    "name": "Korn",
+    "desc": {
+      "es": "Pesado y crudo, perfecto para descargar energía.",
+      "en": "Heavy and raw, perfect for releasing energy."
+    },
+    "image": "/artists/korn.png",
+    "url": "https://open.spotify.com/artist/3RNrq3jvMZxD9ZyoOZbQOD"
+  },
+  {
+    "name": "Acru",
+    "desc": {
+      "es": "Lírica y flow, para cuando quiero algo más mental y enfocado.",
+      "en": "Lyrics and flow, for when I want something more mental and focused."
+    },
+    "image": "/artists/acru.png",
+    "url": "https://open.spotify.com/artist/3H1kzK0Hf2kX8y0lZ9wR9y"
+  },
+  {
+    "name": "Nirvana",
+    "desc": {
+      "es": "Clásico, simple y directo. Nunca falla.",
+      "en": "A classic, simple and direct. Never fails."
+    },
+    "image": "/artists/nirvana.png",
+    "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
+  },
+  {
+    "name": "Metallica",
+    "desc": {
+      "es": "Energía constante, ideal para entrenar o mantener intensidad.",
+      "en": "Constant energy, ideal for training or staying intense."
+    },
+    "image": "/artists/metallica.png",
+    "url": "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+  },
+  {
+    "name": "Slipknot",
+    "desc": {
+      "es": "Intensidad máxima, cuando necesito un empujón extra.",
+      "en": "Maximum intensity, when I need an extra push."
+    },
+    "image": "/artists/slipknot.png",
+    "url": "https://open.spotify.com/artist/05fG473iIaoy82BF1aGhL8"
+  }
+]

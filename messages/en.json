@@ -4,31 +4,63 @@
        "links" :{
         "home" : "Home",
         "projects": "Portfolio",
-        "lab" : "Lab",
         "personal":"About me"
        }
     },
     "contact": {
     "title": "Let's work together",
-    "socialTitle": "My social media",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send"
+    "socialTitle": "Find me on",
+    "ctaText": "You can reach me through email or social media. I'll be happy to chat!",
+    "emailBtn": "Send an email",
+    "instagramBtn": "Instagram"
     },
     "aboutHome":{
         "aboutProTitle": "Building digital experiences",
-        "aboutProText": "I develop web applications focused on performance, accessibility, and modern design. I’m committed to best practices, maintainable architectures, and a detail-oriented mindset. My goal is to create software that delivers real value to both businesses and users.",
+        "aboutProText": "I develop web applications focused on performance, accessibility, and modern design. I'm committed to best practices, maintainable architectures, and a detail-oriented mindset. My goal is to create software that delivers real value to both businesses and users.",
         "aboutPersonalTitle": "A mix of creativity and curiosity",
         "aboutPersonalText": "Besides development, I enjoy exploring art, training, traveling, and learning new things. I love experimenting, building personal projects, and challenging myself. I believe that creativity outside of code fuels creativity within it.",
         "aboutLinkWork":"See my Portfolio",
-        "aboutLinkLab" :"See my personal projects",
         "aboutLinkMe" :"About me"
     },
     "footer":{
         "footerDesc" :"Building digital experiences with passion and curiosity.",
         "footerRec" : "All rights reserved."
+    },
+    "portfolio":{
+        "title": "Portfolio",
+        "subtitle": "A collection of my professional projects and work.",
+        "comingSoon": "Coming soon",
+        "comingSoonDesc": "I'm working on something great. Check back later!"
+    },
+    "aboutme":{
+        "title": "About me",
+        "subtitle": "Who I am, what I do, and what drives me.",
+        "introP1": "I'm not one to stay in theory. I like to understand how things work, get hands-on, and improve along the way.",
+        "introP2": "I spend most of my time building projects, learning new tools, and finding ways to make things simpler and more efficient.",
+        "introP3": "I don't overthink it: I prefer to do, make mistakes, and improve.",
+        "gamingTitle": "Gaming",
+        "gamingText": "I'm drawn to games where progress depends on practice, consistency, and learning from mistakes. I enjoy environments where getting better is part of the process.",
+        "steamBtn": "View Steam profile",
+        "gymTitle": "Training",
+        "gymP1": "Training is a key part of my routine. It taught me discipline, consistency, and to push through even when I don't feel like it.",
+        "gymP2": "I apply that mindset directly to how I work and tackle problems.",
+        "statusLabel": "Current mode",
+        "statusModeRow": "Mode",
+        "statusModeVal": "Building",
+        "statusStateRow": "Status",
+        "statusStateVal": "Active",
+        "statusFocusRow": "Focus",
+        "statusFocusVal": "Improve and learn",
+        "statusLevelRow": "Level",
+        "statusLevelVal": "In progress",
+        "gymTag1": "Discipline",
+        "gymTag2": "Consistency",
+        "gymTag3": "Continuous improvement",
+        "gymTag4": "Focus",
+        "gymTag5": "No excuses",
+        "musicTitle": "Music",
+        "musicP1": "Music is part of my daily life. It's with me when I train, when I'm focused on work, or when I want to disconnect.",
+        "musicP2": "I'm interested in how it influences my energy, focus, and mental state.",
+        "musicListen": "Listen"
     }
-  
-    
 }

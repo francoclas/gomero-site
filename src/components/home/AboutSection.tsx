@@ -12,14 +12,14 @@ export default function AboutSection() {
         {/* CARD PROFESIONAL */}
         <CometCard className="flex-1">
           <div className="
-            rounded-2xl 
-            bg-white/5 
-            backdrop-blur-xl 
-            border border-white/10 
-            p-8 
-            text-inherit 
-            shadow-lg 
-            transition-all 
+            rounded-2xl
+            bg-white/5
+            backdrop-blur-xl
+            border border-white/10
+            p-8
+            text-inherit
+            shadow-lg
+            transition-all
             duration-300
           ">
             <h2 className="text-2xl font-semibold mb-4">
@@ -29,23 +29,22 @@ export default function AboutSection() {
               {t("aboutProText")}
             </p>
             <div className="justify-between">
-              <GButton href="/portafolio">{t("aboutLinkLab")}</GButton> 
-              <GButton href="/laboratorio">{t("aboutLinkWork")}</GButton>
-             </div> 
+              <GButton href="/projects">{t("aboutLinkWork")}</GButton>
+            </div>
           </div>
         </CometCard>
 
         {/* CARD PERSONAL */}
         <CometCard className="flex-1 ">
           <div className="
-            rounded-2xl 
-            bg-white/5 
-            backdrop-blur-xl 
-            border border-white/10 
-            p-8 
-            text-inherit 
-            shadow-lg 
-            transition-all 
+            rounded-2xl
+            bg-white/5
+            backdrop-blur-xl
+            border border-white/10
+            p-8
+            text-inherit
+            shadow-lg
+            transition-all
             duration-300
           ">
             <h2 className="text-2xl font-semibold mb-4 ">
@@ -54,9 +53,8 @@ export default function AboutSection() {
             <p className="text-base opacity-90 leading-relaxed ">
               {t("aboutPersonalText")}
             </p>
-              <GButton href="/portafolio">{t("aboutLinkMe")}</GButton>
+            <GButton href="/aboutme">{t("aboutLinkMe")}</GButton>
           </div>
-           
         </CometCard>
 
       </div>
