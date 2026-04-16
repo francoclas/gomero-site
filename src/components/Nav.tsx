@@ -19,15 +19,6 @@ export default function Nav() {
         router.refresh();
     }
 
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setOpen(false);
-            }
-        }
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside)
-    }, []);
 
     return (
         <nav className="nav-container">
