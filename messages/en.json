@@ -3,8 +3,9 @@
        "title" : "GomeroDev",
        "links" :{
         "home" : "Home",
-        "projects": "Portfolio",
-        "personal":"About me"
+        "projects": "Projects",
+        "personal":"About me",
+        "games": "Games"
        }
     },
     "contact": {
@@ -27,10 +28,9 @@
         "footerRec" : "All rights reserved."
     },
     "portfolio":{
-        "title": "Portfolio",
-        "subtitle": "A collection of my professional projects and work.",
-        "comingSoon": "Coming soon",
-        "comingSoonDesc": "I'm working on something great. Check back later!"
+        "title": "Projects",
+        "subtitle": "What I'm building and what I've already built.",
+        "otherTitle": "Other projects"
     },
     "aboutme":{
         "title": "About me",
@@ -62,5 +62,12 @@
         "musicP1": "Music is part of my daily life. It's with me when I train, when I'm focused on work, or when I want to disconnect.",
         "musicP2": "I'm interested in how it influences my energy, focus, and mental state.",
         "musicListen": "Listen"
+    },
+    "games": {
+        "title": "Games",
+        "subtitle": "Classic games, playable right from the browser.",
+        "play": "Play",
+        "close": "Close",
+        "fullscreen": "Fullscreen"
     }
 }
