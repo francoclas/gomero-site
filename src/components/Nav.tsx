@@ -36,6 +36,7 @@ export default function Nav() {
                     <li><Link href="/projects">{t('links.projects')}</Link></li>
                     <li><Link href="/aboutme">{t('links.personal')}</Link></li>
                     <li><Link href="/games">{t('links.games')}</Link></li>
+                    <li><Link href="/tools">{t('links.tools')}</Link></li>
                 </ul>
 
                 {/* Controles — desktop */}
@@ -83,6 +84,7 @@ export default function Nav() {
                                 { href: "/projects", label: t('links.projects') },
                                 { href: "/aboutme",  label: t('links.personal') },
                                 { href: "/games",    label: t('links.games')    },
+                                { href: "/tools",    label: t('links.tools')    },
                             ].map(({ href, label }) => (
                                 <motion.li
                                     key={href}

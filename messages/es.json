@@ -5,7 +5,8 @@
         "home" : "Inicio",
         "projects": "Proyectos",
         "personal":"Sobre mi",
-        "games": "Juegos"
+        "games": "Juegos",
+        "tools": "Herramientas"
        }
     },
     "contact": {
@@ -69,5 +70,27 @@
         "play": "Jugar",
         "close": "Cerrar",
         "fullscreen": "Pantalla completa"
+    },
+    "tools": {
+        "title": "Herramientas",
+        "subtitle": "Utilidades que construí para uso diario.",
+        "open": "Abrir",
+        "taskManager": {
+            "title": "Gestor de Tareas",
+            "back": "← Herramientas",
+            "addPlaceholderTitle": "Título de la tarea",
+            "addPlaceholderDesc": "Descripción (opcional)",
+            "addBtn": "Agregar",
+            "filterAll": "Todas",
+            "filterPending": "Pendientes",
+            "filterDone": "Completadas",
+            "statTotal": "Total",
+            "statPending": "Pendientes",
+            "statDone": "Completadas",
+            "emptyAll": "No hay tareas. ¡Agregá una!",
+            "emptyPending": "No hay tareas pendientes.",
+            "emptyDone": "No hay tareas completadas.",
+            "deleteLabel": "Eliminar"
+        }
     }
 }

@@ -5,7 +5,8 @@
         "home" : "Home",
         "projects": "Projects",
         "personal":"About me",
-        "games": "Games"
+        "games": "Games",
+        "tools": "Tools"
        }
     },
     "contact": {
@@ -69,5 +70,27 @@
         "play": "Play",
         "close": "Close",
         "fullscreen": "Fullscreen"
+    },
+    "tools": {
+        "title": "Tools",
+        "subtitle": "Utilities I built for daily use.",
+        "open": "Open",
+        "taskManager": {
+            "title": "Task Manager",
+            "back": "← Tools",
+            "addPlaceholderTitle": "Task title",
+            "addPlaceholderDesc": "Description (optional)",
+            "addBtn": "Add",
+            "filterAll": "All",
+            "filterPending": "Pending",
+            "filterDone": "Done",
+            "statTotal": "Total",
+            "statPending": "Pending",
+            "statDone": "Done",
+            "emptyAll": "No tasks yet. Add one!",
+            "emptyPending": "No pending tasks.",
+            "emptyDone": "No completed tasks.",
+            "deleteLabel": "Delete"
+        }
     }
 }
