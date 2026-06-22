@@ -2,6 +2,7 @@ import Image from "next/image";
 //Secciones
 import Hero from "@/components/home/Hero"
 import TechStackCarousel from "@/components/home/StackCarousel";
+import ServicesSection from "@/components/home/ServicesSection";
 import AboutSection from "@/components/home/AboutSection";
 import ContactSection from "@components/home/ContactSection";
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
         </section>
         <section className="StackCarousel">
           <TechStackCarousel></TechStackCarousel>
+        </section>
+        <section className="ServicesSite">
+          <ServicesSection></ServicesSection>
         </section>
         <section className="AboutSite">
           <AboutSection></AboutSection>

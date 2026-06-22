@@ -16,6 +16,28 @@
     "emailBtn": "Enviar correo",
     "instagramBtn": "Instagram"
     },
+    "services": {
+        "title": "Qué puedo construir para vos",
+        "subtitle": "Servicios freelance para startups y empresas que necesitan software bien hecho.",
+        "ctaText": "¿Tenés un proyecto en mente? Hablemos.",
+        "ctaButton": "Contactame",
+        "webApps": {
+            "title": "Web Apps a medida",
+            "description": "Desarrollo de aplicaciones web con React/Next.js y .NET. Desde MVP hasta sistemas completos."
+        },
+        "automation": {
+            "title": "Automatizaciones e integraciones",
+            "description": "Scripts en Python, pipelines ETL e integraciones entre sistemas y APIs externas."
+        },
+        "ai": {
+            "title": "Integración de IA",
+            "description": "Conectá tu producto con modelos de lenguaje (OpenAI, Anthropic). Chatbots, procesamiento de texto y automatización inteligente."
+        },
+        "dashboards": {
+            "title": "Dashboards y reportería",
+            "description": "Paneles de control y reportes con Power BI o React. Transformá tus datos en decisiones."
+        }
+    },
     "aboutHome":{
         "aboutProTitle": "Construyendo experiencias digitales",
         "aboutProText": "Desarrollo aplicaciones web enfocadas en rendimiento, accesibilidad y diseño moderno. Aposto por buenas prácticas, arquitectura mantenible y una visión profesional orientada al detalle. Mi objetivo es crear software que aporte valor real, tanto a empresas como a usuarios.",

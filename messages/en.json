@@ -16,6 +16,28 @@
     "emailBtn": "Send an email",
     "instagramBtn": "Instagram"
     },
+    "services": {
+        "title": "What I can build for you",
+        "subtitle": "Freelance services for startups and businesses that need software done right.",
+        "ctaText": "Got a project in mind? Let's talk.",
+        "ctaButton": "Get in touch",
+        "webApps": {
+            "title": "Custom Web Apps",
+            "description": "Web application development with React/Next.js and .NET. From MVP to full-scale systems."
+        },
+        "automation": {
+            "title": "Automation & Integrations",
+            "description": "Python scripts, ETL pipelines, and integrations between systems and external APIs."
+        },
+        "ai": {
+            "title": "AI Integration",
+            "description": "Connect your product to language models (OpenAI, Anthropic). Chatbots, text processing, and smart automation."
+        },
+        "dashboards": {
+            "title": "Dashboards & Reporting",
+            "description": "Control panels and reports with Power BI or React. Turn your data into decisions."
+        }
+    },
     "aboutHome":{
         "aboutProTitle": "Building digital experiences",
         "aboutProText": "I develop web applications focused on performance, accessibility, and modern design. I'm committed to best practices, maintainable architectures, and a detail-oriented mindset. My goal is to create software that delivers real value to both businesses and users.",
