@@ -26,10 +26,10 @@ html.dark .hero-section {
 }
 
 /* ===========================
-   MARQUEE
+   INTERACTIVE BACKGROUND
    =========================== */
 
-.marquee-wrapper {
+.hero-bg-wrapper {
   position: absolute;
   inset: 0;
   overflow: hidden;
@@ -37,25 +37,29 @@ html.dark .hero-section {
   pointer-events: none;
 }
 
+.hero-bg-row {
+  will-change: transform;
+}
+
 /* LIGHT */
-html.light .marquee-row {
+html.light .hero-bg-row-inner {
    color: rgba(0, 0, 0, 0.45);
 }
 
 /* DARK */
-html.dark .marquee-row {
+html.dark .hero-bg-row-inner {
   color: rgba(255, 255, 255, 0.45);
 }
 
-.marquee-row {
+.hero-bg-row-inner {
   white-space: nowrap;
   font-size: 7rem;
   font-weight: 800;
-  animation: marquee 25s linear infinite;
+  animation: heroBgDrift 25s linear infinite;
   margin: -1.2rem 0;
 }
 
-@keyframes marquee {
+@keyframes heroBgDrift {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
@@ -77,7 +81,7 @@ html.light .hero-content h1 {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-html.light .hero-content h2 {
+html.light .hero-content p {
   color: #444;
 }
 
@@ -87,7 +91,7 @@ html.dark .hero-content h1 {
   text-shadow: 0 2px 16px rgba(255, 255, 255, 0.15);
 }
 
-html.dark .hero-content h2 {
+html.dark .hero-content p {
   color: #ddd;
 }
 
@@ -97,16 +101,26 @@ html.dark .hero-content h2 {
   margin-bottom: 0.6rem;
 }
 
-.hero-content h2 {
+.hero-content p {
   font-size: 1.3rem;
   font-weight: 300;
   opacity: 0.9;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 768px) {
-  .marquee-row { font-size: 3rem; }
+  .hero-bg-row-inner { font-size: 3rem; }
   .hero-content h1 { font-size: 2rem; }
-  .hero-content h2 { font-size: 1rem; }
+  .hero-content p { font-size: 1rem; }
 }
 
 .hero-section::before {

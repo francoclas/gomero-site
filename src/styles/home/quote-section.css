@@ -1,0 +1,37 @@
+.quote-section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.quote-text {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+html.light .quote-text {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+html.dark .quote-text {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 0.95rem;
+  }
+}

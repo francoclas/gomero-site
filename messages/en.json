@@ -16,6 +16,12 @@
     "emailBtn": "Send an email",
     "instagramBtn": "Instagram"
     },
+    "hero": {
+        "headline": "I'm Franco, a web developer.",
+        "subtitle": "If you have an idea or a business that needs a digital presence, I'll take care of the rest — with clean code and real results.",
+        "ctaProjects": "View projects",
+        "ctaContact": "Get in touch"
+    },
     "services": {
         "title": "What I can build for you",
         "subtitle": "Freelance services for startups and businesses that need software done right.",
@@ -23,18 +29,22 @@
         "ctaButton": "Get in touch",
         "webApps": {
             "title": "Custom Web Apps",
+            "short": "Web systems and platforms built around your business",
             "description": "Web application development with React/Next.js and .NET. From MVP to full-scale systems."
         },
         "automation": {
             "title": "Automation & Integrations",
+            "short": "We connect your tools so they work on their own",
             "description": "Python scripts, ETL pipelines, and integrations between systems and external APIs."
         },
         "ai": {
             "title": "AI Integration",
+            "short": "Add artificial intelligence to your product or business",
             "description": "Connect your product to language models (OpenAI, Anthropic). Chatbots, text processing, and smart automation."
         },
         "dashboards": {
             "title": "Dashboards & Reporting",
+            "short": "Visualize your data and make better decisions",
             "description": "Control panels and reports with Power BI or React. Turn your data into decisions."
         }
     },

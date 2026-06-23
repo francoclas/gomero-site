@@ -1,33 +1,33 @@
-import BackgroundMarquee from "@/components/home/BackgroundMarquee";
+import HeroBackground from "@/components/home/HeroBackground";
+import GButton from "@/components/ui/gbutton";
 import "@styles/home/background-marquee.css";
-import { obtenerFrase } from "services/frases.js";
-import { getLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+
 export default async function Hero() {
-  const rows = 12;
-  const text = " gomero.dev ";
-  const locale = await getLocale();
-  const { frase, autor } = await obtenerFrase(locale);
+  const t = await getTranslations("hero");
 
   return (
     <section className="hero-section">
-      <div className="marquee-wrapper">
-        {Array.from({ length: rows }).map((_, i) => (
-          <div
-            key={i}
-            className="marquee-row"
-            style={{
-              animationDuration: `${30 + i * 3}s`,
-              animationDirection: i % 2 === 0 ? "normal" : "reverse",
-            }}
-          >
-            {text.repeat(10)}
-          </div>
-        ))}
-      </div>
+      <HeroBackground />
 
       <div className="hero-content">
-       <h1>{frase}</h1>
-      <h2>- {autor}</h2>
+        <h1>{t("headline")}</h1>
+        <p>{t("subtitle")}</p>
+
+        <div className="hero-ctas">
+          <GButton href="/projects">{t("ctaProjects")}</GButton>
+          <GButton
+            href="#contacto"
+            className="
+              text-current border-black/20 bg-black/5 text-black
+              hover:bg-black/10 hover:text-black hover:border-black/30
+              dark:text-white dark:border-white/20 dark:bg-white/5
+              dark:hover:bg-white/10 dark:hover:text-white dark:hover:border-white/30
+            "
+          >
+            {t("ctaContact")}
+          </GButton>
+        </div>
       </div>
     </section>
   );
