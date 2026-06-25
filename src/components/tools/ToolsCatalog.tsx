@@ -1,12 +1,14 @@
 'use client'
 
 import Link from "next/link";
-import { CheckSquare } from "lucide-react";
+import { CheckSquare, ClipboardCheck, Calculator } from "lucide-react";
 import { tools } from "../../../data/tools";
 import { useTranslations, useLocale } from "next-intl";
 
 function ToolIcon({ icon }: { icon: string }) {
   if (icon === "tasks") return <CheckSquare size={22} className="text-red-400" />;
+  if (icon === "checklist") return <ClipboardCheck size={22} className="text-red-400" />;
+  if (icon === "budget") return <Calculator size={22} className="text-red-400" />;
   return null;
 }
 

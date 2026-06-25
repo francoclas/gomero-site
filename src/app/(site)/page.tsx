@@ -4,6 +4,7 @@ import Hero from "@/components/home/Hero"
 import QuoteSection from "@/components/home/QuoteSection";
 import TechStackCarousel from "@/components/home/StackCarousel";
 import ServicesSection from "@/components/home/ServicesSection";
+import ClientesSection from "@/components/home/ClientesSection";
 import AboutSection from "@/components/home/AboutSection";
 import ContactSection from "@components/home/ContactSection";
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <section className="ServicesSite">
           <ServicesSection></ServicesSection>
         </section>
+        <ClientesSection></ClientesSection>
         <section className="AboutSite">
           <AboutSection></AboutSection>
         </section>

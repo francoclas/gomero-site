@@ -1,5 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import ToolsCatalog from "@/components/tools/ToolsCatalog";
+import PasswordGenerator from "@/components/tools/PasswordGenerator";
+import PasswordChecker from "@/components/tools/PasswordChecker";
+import BioGenerator from "@/components/tools/BioGenerator";
+import PomodoroTimer from "@/components/tools/PomodoroTimer";
 
 export async function generateMetadata() {
   const t = await getTranslations("tools");
@@ -17,8 +21,27 @@ export default async function ToolsPage() {
         <p className="text-lg opacity-60">{t("subtitle")}</p>
       </div>
 
-      <div className="w-full max-w-4xl">
-        <ToolsCatalog />
+      <div className="w-full max-w-5xl flex flex-col gap-12">
+
+        <section className="flex flex-col gap-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wide opacity-45">
+            {t("sections.quick")}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <PasswordGenerator />
+            <PasswordChecker />
+            <BioGenerator />
+            <PomodoroTimer />
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wide opacity-45">
+            {t("sections.apps")}
+          </h2>
+          <ToolsCatalog />
+        </section>
+
       </div>
 
     </main>

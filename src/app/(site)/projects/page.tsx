@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import KoachlyCard from "@/components/KoachlyCard";
+import ExperimentsSection from "@/components/ExperimentsSection";
 import GitHubRepos from "@/components/GitHubRepos";
 
 export async function generateMetadata() {
@@ -27,6 +28,17 @@ export default async function ProjectsPage() {
       <div className="w-full max-w-4xl">
         <KoachlyCard />
       </div>
+
+      {/* Experimentos */}
+      <ExperimentsSection
+        title={t("experimentsTitle")}
+        subtitle={t("experimentsSubtitle")}
+        pausedLabel={t("pausedBadge")}
+        descriptions={{
+          metaGymDesc: t("metaGymDesc"),
+          gestionTicketDesc: t("gestionTicketDesc"),
+        }}
+      />
 
       {/* Repos de GitHub */}
       <GitHubRepos title={t("otherTitle")} />

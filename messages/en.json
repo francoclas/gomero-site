@@ -3,6 +3,7 @@
        "title" : "GomeroDev",
        "links" :{
         "home" : "Home",
+        "services": "Services",
         "projects": "Projects",
         "personal":"About me",
         "games": "Games",
@@ -17,35 +18,43 @@
     "instagramBtn": "Instagram"
     },
     "hero": {
-        "headline": "I'm Franco, a web developer.",
-        "subtitle": "If you have an idea or a business that needs a digital presence, I'll take care of the rest — with clean code and real results.",
-        "ctaProjects": "View projects",
-        "ctaContact": "Get in touch"
+        "eyebrow": "Freelance web development · Uruguay",
+        "headlineLine1": "Your idea needs",
+        "headlineLine2Pre": "a ",
+        "headlineWord": "developer",
+        "headlineLine2Post": ",",
+        "headlineLine3": "not an agency.",
+        "subtitle": "I build what your business needs — fast, with no middlemen. Real experience building systems for the Central Bank of Uruguay.",
+        "ctaPrimary": "Let's talk about your project →",
+        "ctaSecondary": "View projects →"
     },
     "services": {
         "title": "What I can build for you",
         "subtitle": "Freelance services for startups and businesses that need software done right.",
         "ctaText": "Got a project in mind? Let's talk.",
         "ctaButton": "Get in touch",
-        "webApps": {
-            "title": "Custom Web Apps",
-            "short": "Web systems and platforms built around your business",
-            "description": "Web application development with React/Next.js and .NET. From MVP to full-scale systems."
+        "modalCta": "Let's talk",
+        "closeLabel": "Close",
+        "whatsappMessage": "Hi! I'm interested in the \"{service}\" service.",
+        "landingPages": {
+            "title": "Landing pages",
+            "description": "Your business exists, but not online. Or it does, but it doesn't convince anyone.",
+            "price": "From USD 250 · Final price depends on complexity and sections."
+        },
+        "customDev": {
+            "title": "Custom development",
+            "description": "You need something built for you — an app, a system, a platform. Whatever your business needs.",
+            "price": "Custom quote · Every project is unique."
         },
         "automation": {
             "title": "Automation & Integrations",
-            "short": "We connect your tools so they work on their own",
-            "description": "Python scripts, ETL pipelines, and integrations between systems and external APIs."
-        },
-        "ai": {
-            "title": "AI Integration",
-            "short": "Add artificial intelligence to your product or business",
-            "description": "Connect your product to language models (OpenAI, Anthropic). Chatbots, text processing, and smart automation."
+            "description": "There are tasks you do by hand every day that could run on their own.",
+            "price": "From USD 300 · Depends on the integrations and flows involved."
         },
         "dashboards": {
             "title": "Dashboards & Reporting",
-            "short": "Visualize your data and make better decisions",
-            "description": "Control panels and reports with Power BI or React. Turn your data into decisions."
+            "description": "You have data, but not information. You don't know what's happening in your business in real time.",
+            "price": "From USD 300 · Depends on data sources and visualizations."
         }
     },
     "aboutHome":{
@@ -63,7 +72,17 @@
     "portfolio":{
         "title": "Projects",
         "subtitle": "What I'm building and what I've already built.",
-        "otherTitle": "Other projects"
+        "otherTitle": "Other projects",
+        "experimentsTitle": "Experiments",
+        "experimentsSubtitle": "Ideas I started building — some paused, all learning experiences.",
+        "pausedBadge": "Paused",
+        "metaGymDesc": "PWA app for gym management. A Progressive Web App experiment.",
+        "gestionTicketDesc": "Internal ticket management system. Functional prototype, not continued."
+    },
+    "clientes": {
+        "title": "Clients",
+        "subtitle": "Companies and people who trusted gomero.dev",
+        "visitSite": "Visit site"
     },
     "aboutme":{
         "title": "About me",
@@ -107,6 +126,59 @@
         "title": "Tools",
         "subtitle": "Utilities I built for daily use.",
         "open": "Open",
+        "back": "← Tools",
+        "sections": {
+            "quick": "Quick utilities",
+            "apps": "Apps"
+        },
+        "comingSoon": {
+            "title": "Coming soon",
+            "desc": "This tool is under construction."
+        },
+        "passwordGenerator": {
+            "title": "Password Generator",
+            "lengthLabel": "Length",
+            "uppercase": "Uppercase",
+            "numbers": "Numbers",
+            "symbols": "Symbols",
+            "copy": "Copy",
+            "copied": "Copied!"
+        },
+        "passwordChecker": {
+            "title": "Password Strength Checker",
+            "placeholder": "Type your password",
+            "show": "Show password",
+            "hide": "Hide password",
+            "strengthWeak": "Weak",
+            "strengthFair": "Fair",
+            "strengthGood": "Strong",
+            "strengthStrong": "Very strong",
+            "criteriaLength": "At least 8 characters",
+            "criteriaUppercase": "An uppercase letter",
+            "criteriaNumber": "A number",
+            "criteriaSymbol": "A symbol"
+        },
+        "bioGenerator": {
+            "title": "Instagram Bio Generator",
+            "whatLabel": "What do you do?",
+            "whatPlaceholder": "e.g. I help businesses sell more online",
+            "whoLabel": "Who do you help?",
+            "whoPlaceholder": "e.g. small business owners",
+            "offerLabel": "What do you offer or promote?",
+            "offerPlaceholder": "e.g. digital marketing strategies",
+            "generate": "Generate",
+            "copy": "Copy",
+            "copied": "Copied!",
+            "emptyHint": "Fill in the fields and generate your bios"
+        },
+        "pomodoro": {
+            "title": "Pomodoro",
+            "work": "Focus",
+            "break": "Break",
+            "start": "Start",
+            "pause": "Pause",
+            "reset": "Reset"
+        },
         "taskManager": {
             "title": "Task Manager",
             "back": "← Tools",

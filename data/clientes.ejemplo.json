@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "nombre": "Nombre del cliente",
+      "rubro": "Rubro o industria",
+      "logo": "",
+      "testimonio": "Lo que dijeron sobre el trabajo (opcional)",
+      "url": "https://sitio-del-cliente.com"
+    }
+  ]
+}

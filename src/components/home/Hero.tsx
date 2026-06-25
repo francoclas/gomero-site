@@ -1,5 +1,5 @@
 import HeroBackground from "@/components/home/HeroBackground";
-import GButton from "@/components/ui/gbutton";
+import Link from "next/link";
 import "@styles/home/background-marquee.css";
 import { getTranslations } from "next-intl/server";
 
@@ -11,22 +11,27 @@ export default async function Hero() {
       <HeroBackground />
 
       <div className="hero-content">
-        <h1>{t("headline")}</h1>
-        <p>{t("subtitle")}</p>
+        <p className="hero-eyebrow">{t("eyebrow")}</p>
+
+        <h1 className="hero-title">
+          <span className="block">{t("headlineLine1")}</span>
+          <span className="block">
+            {t("headlineLine2Pre")}
+            <span className="hero-title-accent">{t("headlineWord")}</span>
+            {t("headlineLine2Post")}
+          </span>
+          <span className="block">{t("headlineLine3")}</span>
+        </h1>
+
+        <p className="hero-subtitle">{t("subtitle")}</p>
 
         <div className="hero-ctas">
-          <GButton href="/projects">{t("ctaProjects")}</GButton>
-          <GButton
-            href="#contacto"
-            className="
-              text-current border-black/20 bg-black/5 text-black
-              hover:bg-black/10 hover:text-black hover:border-black/30
-              dark:text-white dark:border-white/20 dark:bg-white/5
-              dark:hover:bg-white/10 dark:hover:text-white dark:hover:border-white/30
-            "
-          >
-            {t("ctaContact")}
-          </GButton>
+          <Link href="#contacto" className="hero-cta-primary">
+            {t("ctaPrimary")}
+          </Link>
+          <Link href="/projects" className="hero-cta-secondary">
+            {t("ctaSecondary")}
+          </Link>
         </div>
       </div>
     </section>

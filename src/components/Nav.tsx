@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { setLocale } from '@/app/actions/languageAction';
 import '@styles/nav.css';
@@ -14,6 +14,7 @@ export default function Nav() {
     const t = useTranslations("nav");
     const router = useRouter();
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const changeLang = async (lang: string) => {
         await setLocale(lang);
@@ -23,9 +24,16 @@ export default function Nav() {
 
     const closeMenu = () => setMobileOpen(false);
 
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 20);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
         <>
-            <nav className="nav-container">
+            <nav className={`nav-container${scrolled ? ' scrolled' : ''}`}>
                 <Link href="/" className="nav-logo" onClick={closeMenu}>
                     gomero<span className="dot-red">.dev</span>
                 </Link>
@@ -33,6 +41,7 @@ export default function Nav() {
                 {/* Links — desktop */}
                 <ul className="nav-links">
                     <li><Link href="/">{t('links.home')}</Link></li>
+                    <li><Link href="/#services">{t('links.services')}</Link></li>
                     <li><Link href="/projects">{t('links.projects')}</Link></li>
                     <li><Link href="/aboutme">{t('links.personal')}</Link></li>
                     <li><Link href="/games">{t('links.games')}</Link></li>
@@ -80,11 +89,12 @@ export default function Nav() {
                             className="mobile-nav-links"
                         >
                             {[
-                                { href: "/",        label: t('links.home')     },
-                                { href: "/projects", label: t('links.projects') },
-                                { href: "/aboutme",  label: t('links.personal') },
-                                { href: "/games",    label: t('links.games')    },
-                                { href: "/tools",    label: t('links.tools')    },
+                                { href: "/",          label: t('links.home')     },
+                                { href: "/#services", label: t('links.services') },
+                                { href: "/projects",  label: t('links.projects') },
+                                { href: "/aboutme",   label: t('links.personal') },
+                                { href: "/games",     label: t('links.games')    },
+                                { href: "/tools",     label: t('links.tools')    },
                             ].map(({ href, label }) => (
                                 <motion.li
                                     key={href}

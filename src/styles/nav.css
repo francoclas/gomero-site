@@ -14,7 +14,12 @@
   border-radius: 999px;
 
   backdrop-filter: blur(18px) saturate(140%);
-  transition: all 0.3s ease;
+  transition:
+    padding 0.25s ease-out,
+    background-color 0.25s ease-out,
+    box-shadow 0.25s ease-out,
+    backdrop-filter 0.25s ease-out,
+    transform 0.25s ease-out;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
 }
 
@@ -33,18 +38,42 @@ html.dark .nav-container {
   transform: translateX(-50%) scale(1.03);
 }
 
+/* ── Sticky compacto (scroll) ────────────────────────────────────────────── */
+.nav-container.scrolled {
+  padding: 0.5rem 1.3rem;
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+html.light .nav-container.scrolled {
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+html.dark .nav-container.scrolled {
+  background: rgba(15, 15, 15, 0.72);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* ── Logo ─────────────────────────────────────────────────────────────────── */
 .nav-logo {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-decoration: none;
+  transition: color 0.25s ease-out;
 }
 
 html.light .nav-logo { color: #222; }
 html.dark  .nav-logo { color: white; }
 
-.dot-red { color: #ff3b3b; }
+.nav-logo:hover { color: #e05252; }
+
+.dot-red {
+  color: #ff3b3b;
+  transition: color 0.25s ease-out;
+}
+
+.nav-logo:hover .dot-red { color: #e05252; }
 
 /* ── Links desktop ────────────────────────────────────────────────────────── */
 .nav-links {
@@ -59,12 +88,29 @@ html.light .nav-links a { color: #222; }
 html.dark  .nav-links a { color: rgba(255, 255, 255, 0.9); }
 
 .nav-links a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   font-size: 0.95rem;
-  transition: color 0.25s ease;
+  padding-bottom: 4px;
+  transition: color 0.25s ease-out;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
 }
 
 .nav-links a:hover { color: #ff4747; }
+.nav-links a:hover::after { transform: scaleX(1); }
 
 /* ── Controles (settings + theme) ────────────────────────────────────────── */
 .nav-desktop-controls {
@@ -176,6 +222,7 @@ html.dark  .lang-btn:hover { background: rgba(255, 255, 255, 0.15); }
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 @media (max-width: 767px) {
   .nav-container { gap: 1rem; padding: 0.6rem 1.1rem; }
+  .nav-container.scrolled { padding: 0.45rem 0.9rem; }
   .nav-links            { display: none; }
   .nav-desktop-controls { display: none; }
   .nav-mobile-controls  { display: flex; }

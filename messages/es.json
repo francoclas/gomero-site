@@ -3,6 +3,7 @@
        "title" : "GomeroDev",
        "links" :{
         "home" : "Inicio",
+        "services": "Servicios",
         "projects": "Proyectos",
         "personal":"Sobre mi",
         "games": "Juegos",
@@ -17,35 +18,43 @@
     "instagramBtn": "Instagram"
     },
     "hero": {
-        "headline": "Soy Franco, desarrollador web.",
-        "subtitle": "Si tenés una idea o un negocio que necesita presencia digital, yo me encargo del resto — con código limpio y resultados concretos.",
-        "ctaProjects": "Ver proyectos",
-        "ctaContact": "Contactar"
+        "eyebrow": "Desarrollo web freelance · Uruguay",
+        "headlineLine1": "Tu idea necesita",
+        "headlineLine2Pre": "un ",
+        "headlineWord": "desarrollador",
+        "headlineLine2Post": ",",
+        "headlineLine3": "no una agencia.",
+        "subtitle": "Construyo lo que tu negocio necesita — rápido, sin intermediarios. Experiencia real desarrollando sistemas para el Banco Central del Uruguay.",
+        "ctaPrimary": "Hablemos de tu proyecto →",
+        "ctaSecondary": "Ver proyectos →"
     },
     "services": {
         "title": "Qué puedo construir para vos",
         "subtitle": "Servicios freelance para startups y empresas que necesitan software bien hecho.",
         "ctaText": "¿Tenés un proyecto en mente? Hablemos.",
         "ctaButton": "Contactame",
-        "webApps": {
-            "title": "Web Apps a medida",
-            "short": "Sistemas y plataformas web construidas para tu negocio",
-            "description": "Desarrollo de aplicaciones web con React/Next.js y .NET. Desde MVP hasta sistemas completos."
+        "modalCta": "Hablemos",
+        "closeLabel": "Cerrar",
+        "whatsappMessage": "Hola! Me interesa el servicio de \"{service}\".",
+        "landingPages": {
+            "title": "Landing pages",
+            "description": "Tu negocio existe pero en internet no. O existe pero no convence.",
+            "price": "Desde USD 250 · El precio final depende de la complejidad y las secciones."
+        },
+        "customDev": {
+            "title": "Desarrollo a medida",
+            "description": "Necesitás algo hecho para vos — una app, un sistema, una plataforma. Lo que sea que tu negocio necesite.",
+            "price": "Cotización personalizada · Cada proyecto es único."
         },
         "automation": {
             "title": "Automatizaciones e integraciones",
-            "short": "Conectamos tus herramientas para que trabajen solas",
-            "description": "Scripts en Python, pipelines ETL e integraciones entre sistemas y APIs externas."
-        },
-        "ai": {
-            "title": "Integración de IA",
-            "short": "Sumale inteligencia artificial a tu producto o negocio",
-            "description": "Conectá tu producto con modelos de lenguaje (OpenAI, Anthropic). Chatbots, procesamiento de texto y automatización inteligente."
+            "description": "Hay tareas que hacés a mano todos los días que podrían hacerse solas.",
+            "price": "Desde USD 300 · Depende de las integraciones y flujos involucrados."
         },
         "dashboards": {
             "title": "Dashboards y reportería",
-            "short": "Visualizá tus datos y tomá mejores decisiones",
-            "description": "Paneles de control y reportes con Power BI o React. Transformá tus datos en decisiones."
+            "description": "Tenés datos pero no información. No sabés qué está pasando en tu negocio en tiempo real.",
+            "price": "Desde USD 300 · Depende de las fuentes de datos y visualizaciones."
         }
     },
     "aboutHome":{
@@ -63,7 +72,17 @@
     "portfolio":{
         "title": "Proyectos",
         "subtitle": "Lo que estoy construyendo y lo que ya construí.",
-        "otherTitle": "Otros proyectos"
+        "otherTitle": "Otros proyectos",
+        "experimentsTitle": "Experimentos",
+        "experimentsSubtitle": "Ideas que empecé a construir, algunas pausadas, todas aprendizajes.",
+        "pausedBadge": "En pausa",
+        "metaGymDesc": "App PWA para gestión de gimnasio. Experimento de Progressive Web App.",
+        "gestionTicketDesc": "Sistema de gestión de tickets interno. Prototipo funcional, sin continuar."
+    },
+    "clientes": {
+        "title": "Clientes",
+        "subtitle": "Empresas y personas que confiaron en gomero.dev",
+        "visitSite": "Visitar sitio"
     },
     "aboutme":{
         "title": "Sobre mi",
@@ -107,6 +126,59 @@
         "title": "Herramientas",
         "subtitle": "Utilidades que construí para uso diario.",
         "open": "Abrir",
+        "back": "← Herramientas",
+        "sections": {
+            "quick": "Utilidades rápidas",
+            "apps": "Aplicaciones"
+        },
+        "comingSoon": {
+            "title": "Próximamente",
+            "desc": "Esta herramienta está en construcción."
+        },
+        "passwordGenerator": {
+            "title": "Generador de contraseñas",
+            "lengthLabel": "Longitud",
+            "uppercase": "Mayúsculas",
+            "numbers": "Números",
+            "symbols": "Símbolos",
+            "copy": "Copiar",
+            "copied": "¡Copiado!"
+        },
+        "passwordChecker": {
+            "title": "Verificador de contraseña",
+            "placeholder": "Escribí tu contraseña",
+            "show": "Mostrar contraseña",
+            "hide": "Ocultar contraseña",
+            "strengthWeak": "Débil",
+            "strengthFair": "Regular",
+            "strengthGood": "Fuerte",
+            "strengthStrong": "Muy fuerte",
+            "criteriaLength": "Al menos 8 caracteres",
+            "criteriaUppercase": "Una mayúscula",
+            "criteriaNumber": "Un número",
+            "criteriaSymbol": "Un símbolo"
+        },
+        "bioGenerator": {
+            "title": "Generador de bio para Instagram",
+            "whatLabel": "¿Qué hacés?",
+            "whatPlaceholder": "ej. ayudo a negocios a vender más online",
+            "whoLabel": "¿A quién ayudás?",
+            "whoPlaceholder": "ej. dueños de pequeños negocios",
+            "offerLabel": "¿Qué ofrecés o promovés?",
+            "offerPlaceholder": "ej. estrategias de marketing digital",
+            "generate": "Generar",
+            "copy": "Copiar",
+            "copied": "¡Copiado!",
+            "emptyHint": "Completá los campos y generá tus bios"
+        },
+        "pomodoro": {
+            "title": "Pomodoro",
+            "work": "Trabajo",
+            "break": "Descanso",
+            "start": "Iniciar",
+            "pause": "Pausar",
+            "reset": "Reiniciar"
+        },
         "taskManager": {
             "title": "Gestor de Tareas",
             "back": "← Herramientas",
