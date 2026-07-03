@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Desarrollador web freelance en Uruguay. Landing pages, apps a medida, automatizaciones e integración de IA para negocios que quieren crecer. Sin agencias, sin intermediarios.",
+    "Desarrollador web freelance en Uruguay. Landing pages, apps a medida y automatizaciones para negocios. Sin agencias, sin intermediarios.",
 
   authors: [{ name: "Franco Gómez", url: BASE_URL }],
   creator: "Franco Gómez",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Landing pages, apps a medida y automatizaciones para negocios en Uruguay. Sin agencias, sin intermediarios.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Gomero.dev — Desarrollador Web Freelance en Uruguay",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Desarrollador Web Freelance en Uruguay | Gomero.dev",
     description:
       "Landing pages, apps a medida y automatizaciones para negocios en Uruguay. Sin agencias, sin intermediarios.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
     creator: "@gomerodev",
   },
 
