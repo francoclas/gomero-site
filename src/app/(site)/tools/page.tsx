@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import ToolsCatalog from "@/components/tools/ToolsCatalog";
+import FeaturedProjectCard from "@/components/tools/FeaturedProjectCard";
 import PasswordGenerator from "@/components/tools/PasswordGenerator";
 import PasswordChecker from "@/components/tools/PasswordChecker";
 import BioGenerator from "@/components/tools/BioGenerator";
@@ -22,6 +23,13 @@ export default async function ToolsPage() {
       </div>
 
       <div className="w-full max-w-5xl flex flex-col gap-12">
+
+        <section className="flex flex-col gap-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wide opacity-45">
+            {t("sections.featured")}
+          </h2>
+          <FeaturedProjectCard />
+        </section>
 
         <section className="flex flex-col gap-6">
           <h2 className="text-sm font-semibold uppercase tracking-wide opacity-45">

@@ -41,6 +41,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-kanban-bg: var(--kanban-bg);
+  --color-kanban-surface: var(--kanban-surface);
+  --color-kanban-accent: var(--kanban-accent);
+  --color-kanban-accent-foreground: var(--kanban-accent-foreground);
 }
 
 :root {
@@ -76,6 +80,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --kanban-bg: oklch(1 0 0);
+  --kanban-surface: oklch(0.98 0 0);
+  --kanban-accent: oklch(0.55 0.18 25);
+  --kanban-accent-foreground: oklch(0.99 0 0);
 }
 
 .dark {
@@ -110,6 +118,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --kanban-bg: #161616;
+  --kanban-surface: oklch(0.205 0 0 / 60%);
+  --kanban-accent: #e05252;
+  --kanban-accent-foreground: oklch(0.99 0 0);
 }
 
 @layer base {

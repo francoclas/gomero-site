@@ -129,7 +129,11 @@
         "back": "← Tools",
         "sections": {
             "quick": "Quick utilities",
+            "featured": "Featured project",
             "apps": "Apps"
+        },
+        "featured": {
+            "badge": "Featured"
         },
         "comingSoon": {
             "title": "Coming soon",
@@ -182,19 +186,87 @@
         "taskManager": {
             "title": "Task Manager",
             "back": "← Tools",
-            "addPlaceholderTitle": "Task title",
-            "addPlaceholderDesc": "Description (optional)",
-            "addBtn": "Add",
-            "filterAll": "All",
-            "filterPending": "Pending",
-            "filterDone": "Done",
-            "statTotal": "Total",
-            "statPending": "Pending",
-            "statDone": "Done",
-            "emptyAll": "No tasks yet. Add one!",
-            "emptyPending": "No pending tasks.",
-            "emptyDone": "No completed tasks.",
-            "deleteLabel": "Delete"
+            "deleteLabel": "Delete",
+            "emptyBoard": "No tasks in this board yet.",
+            "dashboard": {
+                "title": "Due Today",
+                "tabLabel": "Due Today",
+                "empty": "No overdue or due-today tasks."
+            },
+            "boards": {
+                "newBoardPlaceholder": "Board name",
+                "newBoardAriaLabel": "New board",
+                "renameAriaLabel": "Rename board",
+                "deleteAriaLabel": "Delete board",
+                "deleteConfirmTitle": "Delete board?",
+                "deleteConfirmBody": "\"{name}\" and all of its tasks will be deleted. This action cannot be undone.",
+                "deleteConfirmConfirm": "Delete",
+                "deleteConfirmCancel": "Cancel"
+            },
+            "columns": {
+                "todo": "To do",
+                "in_progress": "In progress",
+                "review": "In review",
+                "done": "Done"
+            },
+            "priority": {
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High",
+                "urgent": "Urgent"
+            },
+            "view": {
+                "kanban": "Kanban",
+                "list": "List"
+            },
+            "filters": {
+                "searchPlaceholder": "Search by title or description...",
+                "priorityAll": "Any priority",
+                "labelAll": "Any label",
+                "dueAll": "Any date",
+                "dueOverdue": "Overdue",
+                "dueToday": "Due today",
+                "dueNone": "No date",
+                "clear": "Clear filters"
+            },
+            "labels": {
+                "manageButton": "Labels",
+                "manageTitle": "Labels",
+                "namePlaceholder": "Name",
+                "deleteAriaLabel": "Delete label",
+                "noLabels": "No labels yet."
+            },
+            "form": {
+                "titlePlaceholder": "Task title",
+                "descPlaceholder": "Description (optional)",
+                "noLabelsAvailable": "No labels yet. Create one from \"Labels\".",
+                "addBtn": "Add",
+                "saveBtn": "Save",
+                "cancelBtn": "Cancel",
+                "editTitle": "Edit task"
+            },
+            "card": {
+                "editLabel": "Edit",
+                "emptyColumn": "No tasks"
+            },
+            "export": {
+                "menuLabel": "Export",
+                "thisBoard": "This board",
+                "allBoards": "All boards",
+                "json": "JSON",
+                "csv": "CSV",
+                "markdown": "Markdown"
+            },
+            "import": {
+                "buttonLabel": "Import",
+                "successSingle": "Board imported successfully.",
+                "successFull": "Backup restored successfully.",
+                "errorInvalid": "This file isn't in a recognized format.",
+                "confirmReplaceAllTitle": "Replace all data?",
+                "confirmReplaceAllBody": "This backup will replace all of your current boards, tasks, and labels. This action cannot be undone.",
+                "confirmReplaceAllConfirm": "Replace",
+                "confirmReplaceAllCancel": "Cancel"
+            }
         }
     }
 }

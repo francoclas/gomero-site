@@ -1,12 +1,11 @@
 'use client'
 
 import Link from "next/link";
-import { CheckSquare, ClipboardCheck, Calculator } from "lucide-react";
+import { ClipboardCheck, Calculator } from "lucide-react";
 import { tools } from "../../../data/tools";
 import { useTranslations, useLocale } from "next-intl";
 
 function ToolIcon({ icon }: { icon: string }) {
-  if (icon === "tasks") return <CheckSquare size={22} className="text-red-400" />;
   if (icon === "checklist") return <ClipboardCheck size={22} className="text-red-400" />;
   if (icon === "budget") return <Calculator size={22} className="text-red-400" />;
   return null;
@@ -17,7 +16,7 @@ export default function ToolsCatalog() {
   const locale = useLocale();
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+    <div className="flex flex-wrap justify-center gap-5 w-full">
       {tools.map(tool => {
         const desc = tool.desc[locale as "es" | "en"] ?? tool.desc.es;
         return (
@@ -26,6 +25,7 @@ export default function ToolsCatalog() {
             href={tool.href}
             className="
               group flex flex-col gap-4
+              w-full sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.834rem)]
               rounded-2xl p-6
               bg-white/5 backdrop-blur-xl
               border border-black/10 dark:border-white/10

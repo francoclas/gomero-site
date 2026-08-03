@@ -129,7 +129,11 @@
         "back": "← Herramientas",
         "sections": {
             "quick": "Utilidades rápidas",
+            "featured": "Proyecto destacado",
             "apps": "Aplicaciones"
+        },
+        "featured": {
+            "badge": "Destacado"
         },
         "comingSoon": {
             "title": "Próximamente",
@@ -182,19 +186,87 @@
         "taskManager": {
             "title": "Gestor de Tareas",
             "back": "← Herramientas",
-            "addPlaceholderTitle": "Título de la tarea",
-            "addPlaceholderDesc": "Descripción (opcional)",
-            "addBtn": "Agregar",
-            "filterAll": "Todas",
-            "filterPending": "Pendientes",
-            "filterDone": "Completadas",
-            "statTotal": "Total",
-            "statPending": "Pendientes",
-            "statDone": "Completadas",
-            "emptyAll": "No hay tareas. ¡Agregá una!",
-            "emptyPending": "No hay tareas pendientes.",
-            "emptyDone": "No hay tareas completadas.",
-            "deleteLabel": "Eliminar"
+            "deleteLabel": "Eliminar",
+            "emptyBoard": "No hay tareas en este board todavía.",
+            "dashboard": {
+                "title": "Vence hoy",
+                "tabLabel": "Vence hoy",
+                "empty": "No tenés tareas vencidas ni por vencer hoy."
+            },
+            "boards": {
+                "newBoardPlaceholder": "Nombre del board",
+                "newBoardAriaLabel": "Nuevo board",
+                "renameAriaLabel": "Renombrar board",
+                "deleteAriaLabel": "Eliminar board",
+                "deleteConfirmTitle": "¿Eliminar board?",
+                "deleteConfirmBody": "Se eliminará \"{name}\" junto con todas sus tareas. Esta acción no se puede deshacer.",
+                "deleteConfirmConfirm": "Eliminar",
+                "deleteConfirmCancel": "Cancelar"
+            },
+            "columns": {
+                "todo": "Por hacer",
+                "in_progress": "En progreso",
+                "review": "En revisión",
+                "done": "Hecho"
+            },
+            "priority": {
+                "low": "Baja",
+                "medium": "Media",
+                "high": "Alta",
+                "urgent": "Urgente"
+            },
+            "view": {
+                "kanban": "Kanban",
+                "list": "Lista"
+            },
+            "filters": {
+                "searchPlaceholder": "Buscar por título o descripción...",
+                "priorityAll": "Toda prioridad",
+                "labelAll": "Toda etiqueta",
+                "dueAll": "Cualquier fecha",
+                "dueOverdue": "Vencidas",
+                "dueToday": "Vence hoy",
+                "dueNone": "Sin fecha",
+                "clear": "Limpiar filtros"
+            },
+            "labels": {
+                "manageButton": "Etiquetas",
+                "manageTitle": "Etiquetas",
+                "namePlaceholder": "Nombre",
+                "deleteAriaLabel": "Eliminar etiqueta",
+                "noLabels": "No hay etiquetas todavía."
+            },
+            "form": {
+                "titlePlaceholder": "Título de la tarea",
+                "descPlaceholder": "Descripción (opcional)",
+                "noLabelsAvailable": "No hay etiquetas. Creá una desde \"Etiquetas\".",
+                "addBtn": "Agregar",
+                "saveBtn": "Guardar",
+                "cancelBtn": "Cancelar",
+                "editTitle": "Editar tarea"
+            },
+            "card": {
+                "editLabel": "Editar",
+                "emptyColumn": "Sin tareas"
+            },
+            "export": {
+                "menuLabel": "Exportar",
+                "thisBoard": "Este board",
+                "allBoards": "Todos los boards",
+                "json": "JSON",
+                "csv": "CSV",
+                "markdown": "Markdown"
+            },
+            "import": {
+                "buttonLabel": "Importar",
+                "successSingle": "Board importado correctamente.",
+                "successFull": "Backup restaurado correctamente.",
+                "errorInvalid": "El archivo no tiene un formato reconocido.",
+                "confirmReplaceAllTitle": "¿Reemplazar todos los datos?",
+                "confirmReplaceAllBody": "Este backup reemplazará todos tus boards, tareas y etiquetas actuales. Esta acción no se puede deshacer.",
+                "confirmReplaceAllConfirm": "Reemplazar",
+                "confirmReplaceAllCancel": "Cancelar"
+            }
         }
     }
 }
