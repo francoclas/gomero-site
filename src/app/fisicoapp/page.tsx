@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Users, BarChart2, CreditCard, ArrowLeft, Dumbbell } from "lucide-react";
+import { FISICO_APP } from "../../../data/fisicoAppProject";
 
 // ── Datos ──────────────────────────────────────────────────────────────────
 const features = [
@@ -21,12 +22,12 @@ const features = [
 ] as const;
 
 // ── Nav ────────────────────────────────────────────────────────────────────
-function KoachlyNav() {
+function ProjectNav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-[#1E1E1C]/90 backdrop-blur-md border-b border-white/6">
       <div className="text-lg font-bold tracking-tight">
-        <span className="text-[#D85A30]">Koach</span>
-        <span className="text-white">ly</span>
+        <span className="text-[#D85A30]">{FISICO_APP.nameAccent}</span>
+        <span className="text-white">{FISICO_APP.nameRest}</span>
       </div>
       <Link
         href="/"
@@ -53,13 +54,13 @@ function Hero() {
 
       {/* Wordmark */}
       <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight leading-none mb-6">
-        <span className="text-[#D85A30]">Koach</span>
-        <span className="text-white">ly</span>
+        <span className="text-[#D85A30]">{FISICO_APP.nameAccent}</span>
+        <span className="text-white">{FISICO_APP.nameRest}</span>
       </h1>
 
       {/* Subtítulo */}
       <p className="text-lg sm:text-xl text-white/50 max-w-xl leading-relaxed">
-        La plataforma para el PT independiente latinoamericano
+        {FISICO_APP.tagline}
       </p>
 
       {/* Scroll hint */}
@@ -78,7 +79,7 @@ function Features() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1E1E1C] mb-3">
-            ¿Qué es Koachly?
+            ¿Qué es {FISICO_APP.name}?
           </h2>
           <p className="text-[#1E1E1C]/55 text-base max-w-md mx-auto">
             Todo lo que necesitás para gestionar tu trabajo como personal trainer, en una sola app.
@@ -154,7 +155,7 @@ function Footer() {
   return (
     <footer className="bg-[#1E1E1C] py-8 px-6 text-center">
       <p className="text-xs text-white/25">
-        © 2026 Koachly · En construcción ·{" "}
+        © 2026 {FISICO_APP.name} · En construcción ·{" "}
         <Link href="/" className="text-[#D85A30]/70 hover:text-[#D85A30] transition-colors">
           Un proyecto de gomero.dev
         </Link>
@@ -164,10 +165,10 @@ function Footer() {
 }
 
 // ── Page ───────────────────────────────────────────────────────────────────
-export default function KoachlyPage() {
+export default function FisicoAppPage() {
   return (
     <>
-      <KoachlyNav />
+      <ProjectNav />
       <Hero />
       <Features />
       <Creator />

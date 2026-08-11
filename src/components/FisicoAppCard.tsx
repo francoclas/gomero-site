@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Users, Dumbbell, CreditCard, ArrowRight } from "lucide-react";
+import { FISICO_APP } from "../../data/fisicoAppProject";
 
 // ── Datos estáticos ───────────────────────────────────────────────────────────
 const pills = [
@@ -24,7 +25,7 @@ const mockClients = [
 ] as const;
 
 // ── Componente ────────────────────────────────────────────────────────────────
-export default function KoachlyCard() {
+export default function FisicoAppCard() {
   return (
     <div className="
       w-full rounded-2xl overflow-hidden
@@ -49,13 +50,13 @@ export default function KoachlyCard() {
 
           {/* Wordmark */}
           <div className="leading-none">
-            <span className="text-4xl font-bold tracking-tight text-[#D85A30]">Koach</span>
-            <span className="text-4xl font-bold tracking-tight text-white">ly</span>
+            <span className="text-4xl font-bold tracking-tight text-[#D85A30]">{FISICO_APP.nameAccent}</span>
+            <span className="text-4xl font-bold tracking-tight text-white">{FISICO_APP.nameRest}</span>
           </div>
 
           {/* Tagline */}
           <p className="text-sm text-white/55 leading-relaxed max-w-xs">
-            Plataforma para personal trainers independientes en LATAM
+            {FISICO_APP.cardTagline}
           </p>
 
           {/* Pills */}
@@ -92,7 +93,7 @@ export default function KoachlyCard() {
           {/* Footer */}
           <div className="flex items-center justify-between pt-2 mt-auto border-t border-white/6">
             <Link
-              href="/koachly"
+              href={FISICO_APP.href}
               className="
                 inline-flex items-center gap-2
                 text-sm font-semibold text-[#D85A30]

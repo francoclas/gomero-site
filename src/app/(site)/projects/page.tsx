@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import KoachlyCard from "@/components/KoachlyCard";
+import FisicoAppCard from "@/components/FisicoAppCard";
 import ExperimentsSection from "@/components/ExperimentsSection";
 import GitHubRepos from "@/components/GitHubRepos";
 
@@ -24,9 +24,9 @@ export default async function ProjectsPage() {
         </p>
       </div>
 
-      {/* Hero card — Koachly */}
+      {/* Hero card — FisicoApp */}
       <div className="w-full max-w-4xl">
-        <KoachlyCard />
+        <FisicoAppCard />
       </div>
 
       {/* Experimentos */}

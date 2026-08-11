@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { FISICO_APP } from "../../../data/fisicoAppProject";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -8,11 +9,11 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Koachly — Plataforma para personal trainers",
-  description: "La plataforma para el PT independiente latinoamericano. En construcción.",
+  title: FISICO_APP.metaTitle,
+  description: FISICO_APP.metaDescription,
 };
 
-export default function KoachlyLayout({ children }: { children: React.ReactNode }) {
+export default function FisicoAppLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={`${jakarta.variable} font-[family-name:var(--font-jakarta)]`}>
       {children}
